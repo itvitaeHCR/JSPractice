@@ -23,7 +23,7 @@
 
     <p id="p1"></p>
     <p id="p2"></p>
-    <p id="p3"></p>
+    <p id="p3">JavaScript paragraph.</p><br>
 
     <script>
         let a, b, c;
@@ -31,7 +31,9 @@
         b = 6;
         c = a + b;
 
-        let band = "Rammstein";
+        var band = "Rammstein";
+        const band2 = {type:"math metal", name:"Meshuggah", seenLive:0};
+        band2.seenLive = 1;
 
         function myFunction() {
             document.getElementById("p1").innerHTML = "Sonne";
