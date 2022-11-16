@@ -14,5 +14,29 @@ function askForName() {
 
 function getConfirmation() {
     var yesNo = confirm("I'm assuming you love this website?");
-    document.getElementById("p4").innerHTML = yesNo
+    if (yesNo == true) {
+        document.getElementById("p4").innerHTML = Number(yesNo)
+    } else {
+        document.getElementById("p4").innerHTML = yesNo
+    }
+}
+
+function ageCheck() {
+    var age = Number(prompt("Please provide your age"));
+    if (age < 25) {
+        document.getElementById("p5").innerHTML = "you are younger than 25";
+    } else if (age > 25) {
+        document.getElementById("p5").innerHTML = "you are older than 25";
+    } else {
+        document.getElementById("p5").innerHTML = "you must be 25";
+    }    
+}
+
+function looping() {
+    var total = 0;
+    for(var x = 0; x<5; x++){
+        total += " ";
+        total += String(x+1);
+    }
+    document.getElementById("p6").innerHTML = total;
 }
