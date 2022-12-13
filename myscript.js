@@ -8,12 +8,12 @@ function myFunction() {
 }
 
 function askForName() {
-    var name = prompt("Please state your name: ", "no name provided");
+    let name = prompt("Please state your name: ", "no name provided");
     document.getElementById("p3").innerHTML = name;
 }
 
 function getConfirmation() {
-    var yesNo = confirm("I'm assuming you love this website?");
+    let yesNo = confirm("I'm assuming you love this website?");
     if (yesNo == true) {
         document.getElementById("p4").innerHTML = Number(yesNo)
     } else {
@@ -22,7 +22,7 @@ function getConfirmation() {
 }
 
 function ageCheck() {
-    var age = Number(prompt("Please provide your age"));
+    let age = Number(prompt("Please provide your age"));
     if (age < 25) {
         document.getElementById("p5").innerHTML = "you are younger than 25";
     } else if (age > 25) {
@@ -33,7 +33,7 @@ function ageCheck() {
 }
 
 function looping() {
-    var total = 0;
+    let total = 0;
     for(var x = 0; x<5; x++){
         total += " ";
         total += String(x+1);
